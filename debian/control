@@ -1,0 +1,24 @@
+Source: libregexp-assemble-perl
+Section: perl
+Priority: optional
+Build-Depends: debhelper (>= 8)
+Build-Depends-Indep: perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Xavier Guimard <x.guimard@free.fr>
+Standards-Version: 3.9.6
+Vcs-Git: git://anonscm.debian.org/pkg-perl/packages/libregexp-assemble-perl.git
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-perl/packages/libregexp-assemble-perl.git
+Homepage: https://metacpan.org/release/Regexp-Assemble
+Testsuite: autopkgtest-pkg-perl
+
+Package: libregexp-assemble-perl
+Architecture: all
+Depends: ${perl:Depends}, ${misc:Depends}
+Description: Perl module to merge several regular expressions
+ Regexp::Assemble takes an arbitrary number of regular expressions
+ and assembles them into a single regular expression (or RE) that
+ matches all that the individual REs match.
+ .
+ It is also possible to track the original patterns, so that you can
+ determine which, among the source patterns that form the assembled
+ pattern, was the one that caused the match to occur.
